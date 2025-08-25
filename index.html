@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea, select, input[type="number"], input[type="date"], input[type="url"], input[type="tel"], input[type="search"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>1. & 2. Corrected HTML Snippet</h2>
+    <div>
+        <p>guvi</p>
+        <div>
+            Lorem ipsum dolor si
+            <div>
+                <div>
+                    Guvi Geek Ne
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h2>3. Contact Us Form</h2>
+    <form action="/submit-form" method="post">
+        <div>
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="name" required>
+        </div>
+        <div>
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="email" required>
+        </div>
+        <div>
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+
+    <h2>4. Nested Lists</h2>
+    <ul>
+        <li>
+            Programming Language
+            <ul>
+                <li>
+                    JavaScript
+                    <ol type="a">
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                    </ol>
+                </li>
+                <li>
+                    Python
+                    <ol type="a">
+                        <li>Django Framework</li>
+                        <li>Flask Framework</li>
+                    </ol>
+                </li>
+                <li>
+                    Java
+                    <ol type="a">
+                        <li>Spring</li>
+                        <li>Maven</li>
+                        <li>Hibernate</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Database
+            <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Cansandra</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+
+    <h2>5. Link to Google</h2>
+    <a href="https://google.com" target="_blank">Open Google in a new tab</a>
+    <hr>
+
+    <h2>6. Radio Buttons</h2>
+    <p>Employee Type:</p>
+    <input type="radio" id="salaried" name="employee_type" value="salaried">
+    <label for="salaried">Salaried</label><br>
+    <input type="radio" id="own_business" name="employee_type" value="own_business">
+    <label for="own_business">Own Business</label>
+    <hr>
+
+    <h2>9. Input Tags with Default Values</h2>
+    <form>
+        <p>Text Input:</p>
+        <input type="text" name="username" value="Raj"><br>
+
+        <p>Password Input:</p>
+        <input type="password" name="password" value="secret123"><br>
+        
+        <p>Textarea:</p>
+        <textarea name="comment">This is a default comment.</textarea><br>
+
+        <p>Checkbox (checked by default):</p>
+        <input type="checkbox" name="subscribe" checked> Subscribe<br>
+
+        <p>Radio Button (checked by default):</p>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female<br>
+        
+        <p>Dropdown (selected by default):</p>
+        <select name="country">
+            <option value="india"selected>India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+    </form>
+    <hr>
+
+    <h2>10. Highlight Text</h2>
+    <p>Here's a sentence with <mark>HTML & CSS is awesome</mark> highlighted.</p>
+    <hr>
+
+    <h2>11. All Types of Input Elements</h2>
+    <form action="#">
+        <label for="all-text">Text Input:</label>
+        <input type="text" id="all-text" name="text"><br>
+        
+        <label for="all-password">Password:</label>
+        <input type="password" id="all-password" name="password"><br>
+
+        <label for="all-email">Email:</label>
+        <input type="email" id="all-email" name="email"><br>
+
+        <label for="all-number">Number:</label>
+        <input type="number" id="all-number" name="number"><br>
+
+        <label for="all-date">Date:</label>
+        <input type="date" id="all-date" name="date"><br>
+
+        <p>Radio Buttons (select one):</p>
+        <input type="radio" id="all-radio1" name="all_radio_group">
+        <label for="all-radio1">Option 1</label><br>
+        <input type="radio" id="all-radio2" name="all_radio_group">
+        <label for="all-radio2">Option 2</label><br>
+
+        <p>Checkboxes (select multiple):</p>
+        <input type="checkbox" id="all-check1" name="all_checkbox_group">
+        <label for="all-check1">Option A</label><br>
+        <input type="checkbox" id="all-check2" name="all_checkbox_group">
+        <label for="all-check2">Option B</label><br>
+        
+        <label for="all-file">File Upload:</label>
+        <input type="file" id="all-file" name="file_upload"><br>
+
+        <label for="all-color">Color Picker:</label>
+        <input type="color" id="all-color" name="color_picker"><br>
+
+        <label for="all-range">Range (Slider):</label>
+        <input type="range" id="all-range" name="range_slider"><br>
+
+        <label for="all-url">URL:</label>
+        <input type="url" id="all-url" name="url"><br>
+
+        <label for="all-tel">Telephone:</label>
+        <input type="tel" id="all-tel" name="tel"><br>
+
+        <label for="all-search">Search:</label>
+        <input type="search" id="all-search" name="search"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
